@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #FE899C;
+    padding: 1vh 3vh;
+}
+.logo img{
+    height: 5vh;
+    cursor: pointer;
+    transition: transform 1s;
+}
+.navlist{
+    flex: 1;
+    text-align: right;    
+}
+.navlist ul{
+    display: inline-block;
+    list-style: none;
+}
+.navlist ul li{
+    display: inline-block;
+    margin-right: 4vh;
+    transition: transform 1s; 
+}
+.navlist ul li a{
+    color: #fff;
+}
+.navlist ul li:hover{
+    transform: translateY(-5px)
+}
+.menu{
+    font-size: 40px;
+    display: none;
+}
+
+@media only screen and (max-width: 800px){
+    .menu_icon{
+        display: block;
+    }
+    .navlist ul{
+        position: absolute;
+        top: 50px;
+        right: -20%;
+        background-color: #FE899C;
+        width: 140px;
+        z-index: 1000;
+        transition: 0.7s;
+    }
+    .navlist ul li{
+        padding: 20px;
+    }
+}
+
+.slider{
+    width: 100%;
+    height: 20rem; 
+    position: relative;
+    overflow: hidden;
+}
+.slides{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 1s;
+}
+@media screen and (min-width: 600px) {
+    .slider{
+        height: 30rem;
+    }
+}
+.slider button{
+    position: absolute;
+    padding: 30px;
+    height: 100%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+.nextbtn{
+    left: 50%;
+    text-align: right;
+}
+.prevbtn{
+    text-align: left;
+}
+.nextbtn i, .prevbtn i{
+    font-size: 40px;
+    color: white;
+}
+.cat_cont, .tprodCont{
+    padding: 0px 2rem;
+    text-align: center;
+}
+.tprodCont{
+    margin-top: 50px;
+}
+.line{
+    width: 70px;
+    height: 5px;
+    background-color: #FE899C;
+    border-radius: 20px;
+    margin: 5px auto;
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+footer{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0;
+    height: fit-content;
+    padding: 10px;
+    color: #fff;
+}
+footer a{
+    padding: 0 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+}
+footer a:hover{
+    color: white;
+    text-decoration: underline;
+    transition: 0.3s;
+}
